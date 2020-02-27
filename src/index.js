@@ -1,7 +1,8 @@
 function getAllVowels(string) {
-    const vowels = ["A", "a", "E", "e", "O", "o", "И", "и", "І", "і"];
+    const vowels = ["А", "а", "Е", "е", "О", "о", "И", "и", "І", "і"];
     let count = 0;
-    for (let i = 0; i < string.length; i++) {
+    let str = string;
+    for (let i = 0; i < str.length; i++) {
         for (let j = 0; j < vowels.length; j++) {
             if(string[i] === vowels[j]) {
             count++;
